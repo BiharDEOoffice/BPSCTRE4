@@ -10,7 +10,15 @@
 *{box-sizing:border-box}
 body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--soft)}
 a{color:#0b57b7}
-header{background:var(--navy);color:#fff}
+html{scroll-padding-top:100px}
+header{
+  background:var(--navy);
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 6px rgba(0,0,0,.25);
+}
 .wrap{max-width:900px;margin:0 auto;padding:0 16px}
 .brand{padding:14px 0 6px;font-size:1.6rem;font-weight:700;letter-spacing:.2px}
 .brand small{display:block;font-size:.8rem;font-weight:400;opacity:.8}
@@ -51,7 +59,7 @@ footer .fl{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:12px}
 <body>
 
 <header>
-  <div class="fixed">
+  <div class="wrap">
     <div class="brand">Bihar DEO Office ✅<small>बिहार के सभी डीईओ ऑफिस, सचिवालय से ऑफिसियल लेटर्स प्राप्त करने के लिए जरूर जुड़े।</small></div>
   </div>
   <nav aria-label="Main">
