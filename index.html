@@ -1,970 +1,200 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0d6efd">
-<title><title>Bihar DEO Office ✅ - Arrear Format </title></title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BPSC School Teacher TRE 4.0 Recruitment 2026 – Bihar DEO Office</title>
+<meta name="description" content="BPSC School Teacher TRE 4.0 Recruitment 2026 for 32,388 posts. Check dates, fee, age limit, eligibility and apply link.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@600;800&family=Mukta:wght@400;500;600;700&display=swap');
-
-:root{
-  --font-ui:"Mukta","Nirmala UI",Arial,sans-serif;
-  --font-head:"Martel","Nirmala UI",Georgia,serif;
-  --ink:#0e1a4d; --ink-2:#45507a; --muted:#6f7a9c;
-  --blue:#1b34a8; --blue-soft:#e6ebff;
-  --red:#c8291f; --hi:#fff36b;
-  --page:#f7f9fd; --rule:#dfe7f4; --edge:#c9d4ec; --edge-2:#b3c1e3;
-}
-
-*{box-sizing:border-box;}
-
-body{
-  margin:0; padding:6px;
-  background-color:var(--page);
-  background-image:repeating-linear-gradient(180deg,transparent 0,transparent 27px,var(--rule) 27px,var(--rule) 28px);
-  color:var(--ink); font-family:var(--font-ui); -webkit-text-size-adjust:100%; overflow-x:hidden;
-}
-
-button,input,select{ font-family:inherit; }
-
-.app{ width:100%; max-width:1300px; margin:auto; }
-
-.app::before{
-  content:"Bihar DEO Office ✅ - Arrear Format";
-  display:block; margin-bottom:8px; padding:11px 14px 10px;
-  background:var(--ink); color:#fff; font-family:var(--font-head); font-weight:800;
-  font-size:15px; letter-spacing:.3px; border-radius:6px; border-bottom:3px solid var(--red);
-}
-
-button{
-  --c:#56617c; --c-on:#fff;
-  border:0; border-radius:7px; padding:8px 12px; font-weight:700; font-size:12.5px;
-  min-height:36px; cursor:pointer; touch-action:manipulation; -webkit-tap-highlight-color:transparent;
-  background:var(--c); color:var(--c-on); transition:transform .1s ease,filter .15s ease;
-}
-button:active{ transform:translateY(1px); }
-button:disabled{ opacity:.45; cursor:not-allowed; }
-@media (hover:hover){ button:hover:not(:disabled){ filter:brightness(.94); } }
-
-.warning{ --c:#c96a0b; }
-.green{ --c:#1d7a4b; }
-.gray{ --c:#56617c; }
-.danger{ --c:#c8291f; }
-.primary{ --c:#1b34a8; }
-.excel-export-btn{ --c:#0f7a3f; }
-.share-btn{ --c:#6b3fc9; }
-
-.toolbar{
-  position:sticky; top:4px; z-index:1000; display:flex; flex-wrap:wrap; align-items:center;
-  gap:5px; margin-bottom:10px; padding:8px; background:#fff; border:1.5px solid var(--edge);
-  border-radius:8px; box-shadow:0 2px 0 var(--edge),0 8px 18px rgba(14,26,77,.08);
-}
-.toolbar button{ box-shadow:0 2px 0 rgba(14,26,77,.3); }
-
-.entry-panel{
-  background:#fff; border:1.5px solid var(--edge); border-radius:6px; padding:14px;
-  margin-bottom:12px; box-shadow:0 2px 0 var(--edge); line-height:1.45;
-}
-
-.entry-title{
-  font-family:var(--font-head); font-size:15px; font-weight:800; color:var(--ink);
-  text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:2px;
-  text-underline-offset:5px; margin-bottom:10px; display:flex; justify-content:space-between;
-  align-items:center; flex-wrap:wrap; gap:8px;
-}
-
-.entry-title > div{ display:flex; gap:6px; flex-wrap:wrap; }
-.entry-title button{ font-size:11.5px; padding:6px 10px; min-height:32px; }
-
-.entry-grid{
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px 8px;
-}
-.entry-grid label{ font-size:12px; font-weight:600; color:var(--ink-2); display:block; margin-bottom:3px; }
-.entry-grid input,.entry-grid select{
-  width:100%; padding:7px 10px; border:1.5px solid var(--edge-2); border-radius:6px;
-  font-size:14px; font-weight:500; min-height:40px; background:#fff; color:var(--ink);
-}
-.entry-grid input:focus{ outline:0; border-color:var(--blue); box-shadow:0 0 0 3px rgba(27,52,168,.16); }
-
-.collapse-head{
-  margin-top:10px; padding:10px 12px; background:#f1f5fd; border:1.5px solid var(--edge);
-  border-left:5px solid var(--edge-2); border-radius:6px; font-size:13.5px; font-weight:700;
-  color:var(--ink); cursor:pointer; display:flex; justify-content:space-between; align-items:center;
-  user-select:none;
-}
-.collapse-head.open{ background:var(--blue-soft); border-color:#b4c2f5; border-left-color:var(--blue); color:var(--blue); }
-.collapse-content{ display:none; padding-top:10px; }
-.collapse-content.show{ display:block; }
-
-.util-note{
-  margin-top:10px; border-radius:6px; padding:10px 12px; font-size:12px; line-height:1.6;
-  color:var(--ink-2); border:1.5px solid #cfc6f7; border-left-width:5px; background:#f4f1ff;
-}
-
-.status{
-  display:inline-block; margin-top:12px; padding:4px 10px; background:#e3f4ea;
-  border:1.5px solid #a9dcbf; border-radius:4px; font-size:11.5px; color:#14603a; font-weight:600;
-}
-
-.paper-container{
-  width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:16px 10px 28px;
-  background:#cdd6e8; border:1.5px solid var(--edge-2); border-radius:8px;
-  box-shadow:inset 0 3px 8px rgba(14,26,77,.12);
-}
-
-.paper{
-  width:max-content; min-width:100%; background:#fff; padding:10px 14px; margin:auto;
-  box-shadow:0 2px 10px #0002; font-family:"Nirmala UI",Arial,sans-serif; color:#111;
-}
-
-.form-title{ text-align:center; font-size:20px; font-weight:800; text-decoration:underline; margin-bottom:8px; }
-
-.header-lines{ font-size:13px; margin-bottom:6px; }
-.header-row{ display:flex; border:.4mm solid #222; }
-.header-row + .header-row{ border-top:0; }
-.header-cell{ flex:1; padding:6px 8px; border-right:.4mm solid #222; font-weight:700; }
-.header-cell:last-child{ border-right:0; }
-.header-cell span{ font-weight:500; }
-
-.section-title{
-  text-align:center; font-weight:800; font-size:15px; border:.4mm solid #222; border-top:0;
-  padding:6px; background:#f1f5fd;
-}
-
-table{ border-collapse:collapse; table-layout:auto; font-size:11px; white-space:nowrap; }
-th,td{ border:.3mm solid #222; text-align:center; padding:4px 6px; min-width:58px; }
-thead th{ font-weight:700; vertical-align:middle; line-height:1.2; background:#f7f9fd; }
-tbody tr{ height:32px; }
-tfoot td{ font-weight:800; background:#eef2fb; }
-
-td input{
-  width:100%; min-width:48px; border:0; outline:0; background:transparent; text-align:center;
-  font-family:inherit; font-size:11px; padding:0; font-weight:600; color:var(--blue);
-}
-td input:focus{ background:var(--hi); }
-td.month-cell{ text-align:left; font-weight:700; white-space:nowrap; }
-td.readonly{ background:#f7f9fd; font-weight:700; color:var(--ink); }
-
-th .comp-name{ font-weight:700; }
-th .comp-del{
-  display:inline-block; margin-left:4px; color:var(--red); cursor:pointer; font-weight:800; font-size:11px;
-}
-
-.signatures{
-  margin-top:24px; display:grid; gap:16px;
-  font-size:12px; font-weight:700; text-align:center;
-}
-.sig{ border-top:1px dashed #666; padding-top:20px; white-space:pre-line; }
-
-.sig-editor-item{
-  display:flex; align-items:center; gap:6px; background:#fff;
-  border:1.5px solid var(--edge); border-radius:6px; padding:6px 6px 6px 10px; margin-bottom:7px;
-}
-.sig-editor-item input{
-  flex:1; min-height:36px; padding:6px 8px; border:1.5px solid var(--edge-2); border-radius:6px;
-  font-size:12.5px; font-weight:600; color:var(--ink);
-}
-.sig-editor-item button{ min-height:32px; min-width:34px; padding:3px 8px; font-size:13px; }
-
-/* ============ DIALOG ============ */
-.dialog-bg{
-  position:fixed; inset:0; background:rgba(14,26,77,.6); display:none;
-  align-items:center; justify-content:center; z-index:3000; padding:16px;
-}
-.dialog-box{
-  background:#fff; border-radius:8px; border-top:5px solid var(--blue); padding:16px;
-  width:100%; max-width:380px; max-height:85vh; overflow:auto; box-shadow:0 14px 34px rgba(14,26,77,.35);
-  line-height:1.45;
-}
-.dialog-box h4{ margin:0 0 12px; font-family:var(--font-head); font-weight:800; color:var(--ink); font-size:15px; }
-.dialog-box select{
-  width:100%; min-height:42px; padding:8px 10px; border:1.5px solid var(--edge-2); border-radius:6px;
-  margin-bottom:12px; font-size:14px; font-weight:500; color:var(--ink); background:#fff;
-}
-
-@media(max-width:600px){
-  .toolbar{ flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; }
-  .toolbar::-webkit-scrollbar{ display:none; }
-  .toolbar button{ flex:0 0 auto; white-space:nowrap; }
-  .entry-panel{ padding:12px 10px; }
-  .dialog-bg{ align-items:flex-end; padding:0; }
-  .dialog-box{ max-width:none; border-radius:12px 12px 0 0; }
-}
-
-@media print{
-  body{ background:#fff !important; padding:0 !important; margin:0 !important; }
-  .app::before,.toolbar,.entry-panel{ display:none !important; }
-  .paper-container{ overflow:visible !important; padding:0 !important; background:none !important; border:0 !important; box-shadow:none !important; }
-  .paper{ box-shadow:none !important; }
-}
+:root{--navy:#14315c;--saffron:#e8a317;--ink:#1d2433;--line:#d9dee7;--soft:#f3f5f9;--bg:#fff}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--soft)}
+a{color:#0b57b7}
+header{background:var(--navy);color:#fff}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+.brand{padding:14px 0 6px;font-size:1.6rem;font-weight:700;letter-spacing:.2px}
+.brand small{display:block;font-size:.8rem;font-weight:400;opacity:.8}
+nav{border-top:1px solid rgba(255,255,255,.15)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+nav a{display:block;padding:10px 14px;color:#fff;text-decoration:none;font-size:.95rem}
+nav a:hover,nav a:focus-visible{background:var(--saffron);color:#111;outline:none}
+main{background:var(--bg);margin:16px auto;padding:20px 18px 28px;border:1px solid var(--line)}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .3em;color:var(--navy)}
+h2{font-size:1.3rem;margin:1.6em 0 .5em;color:var(--navy);border-left:5px solid var(--saffron);padding-left:10px}
+h3{font-size:1.05rem;margin:1.3em 0 .4em;background:var(--navy);color:#fff;padding:7px 12px}
+.meta{color:#5a6478;font-size:.9rem;margin-bottom:14px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.btn{display:inline-block;padding:9px 16px;border-radius:4px;color:#fff;text-decoration:none;font-weight:600}
+.btn.app{background:var(--navy)}.btn.wa{background:#1f9d55}.btn.tg{background:#229ed9}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--saffron);outline-offset:2px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.box{border:1px solid var(--line)}
+.box h3{margin:0}
+.box ul{margin:0;padding:12px 12px 12px 30px}
+.wide{grid-column:1/-1}
+.total{font-size:1.6rem;font-weight:700;color:var(--navy);padding:12px;margin:0}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:0}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.links td:first-child{font-weight:600;width:55%}
+.links a{font-weight:700}
+.faq p{margin:.2em 0 1em}
+.note{background:#fff8e6;border:1px solid #f0d58a;padding:10px 12px;margin:16px 0}
+.related ul{padding-left:20px}
+footer{background:var(--navy);color:#dfe6f2;font-size:.88rem;padding:20px 0 28px}
+footer a{color:#fff}
+footer .fl{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:12px}
+@media(max-width:640px){.cols{grid-template-columns:1fr}h1{font-size:1.4rem}}
 </style>
 </head>
 <body>
 
-<div class="app">
+<header>
+  <div class="wrap">
+    <div class="brand">Bihar DEO Office ✅<small>Latest jobs, admit cards and results for Bihar</small></div>
+  </div>
+  <nav aria-label="Main">
+    <div class="wrap"><ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Latest Job</a></li>
+      <li><a href="#">Admit Card</a></li>
+      <li><a href="#">Result</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#">Syllabus</a></li>
+      <li><a href="#">Answer Key</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul></div>
+  </nav>
+</header>
 
-<div class="toolbar">
-  <button class="warning" onclick="downloadPDF()">📥 PDF</button>
-  <button class="excel-export-btn" onclick="exportToExcel()">📊 Excel Export</button>
-  <button class="gray" onclick="window.print()">🖨 Print</button>
-  <button class="green" onclick="saveData()">💾 Save</button>
-  <button class="gray" onclick="loadData()">↻ Reload</button>
-  <button class="danger" onclick="clearData()">Clear</button>
+<div class="wrap">
+<main>
+  <article>
+    <h1>BPSC School Teacher TRE 4.0 Recruitment 2026</h1>
+    <div class="meta">Post date: September 29, 2026</div>
+
+    <p>The <a href="http://www.bpsc.bih.nic.in/"><strong>Bihar Public Service Commission (BPSC)</strong></a> has released the notification for <strong>TRE 4.0 School Teacher</strong> recruitment. There are <strong>32,388 vacancies</strong>. Applications opened on <strong>25 September 2026</strong> and close on <strong>26 October 2026</strong>. The minimum age is 18 to 21 years depending on the class level, and the maximum is 42 years as on 01 August 2026. Please read all the details below before you apply.</p>
+
+    <div class="btns">
+      <a class="btn app" href="#">Get the app</a>
+      <a class="btn wa" href="https://whatsapp.com/channel/0029VaAbQf01NCrYADMLt00L">WhatsApp</a>
+      <a class="btn tg" href="https://t.me/Bihardeooffice">Telegram</a>
+    </div>
+
+    <h2>BPSC School Teacher TRE 4.0 Online Form 2026 (32,388 Posts)</h2>
+    <h3>Short details</h3>
+
+    <div class="cols">
+      <section class="box">
+        <h3>Important dates</h3>
+        <ul>
+          <li>Application start: <strong>25 September 2026</strong></li>
+          <li>Application last date: <strong>26 October 2026</strong></li>
+          <li>Fee payment last date: <strong>26 October 2026</strong></li>
+          <li>Exam date: <strong>To be notified</strong></li>
+          <li>Admit card: <strong>Before the exam</strong></li>
+          <li>Result: <strong>Will be updated here</strong></li>
+        </ul>
+      </section>
+
+      <section class="box">
+        <h3>Application fee</h3>
+        <ul>
+          <li>All categories: <strong>₹100/-</strong></li>
+          <li>Payment mode (online): debit card, credit card, internet banking, IMPS, cash card or mobile wallet</li>
+        </ul>
+      </section>
+
+      <section class="box">
+        <h3>Age limit (as on 01 August 2026)</h3>
+        <ul>
+          <li>Minimum: <strong>18 years</strong> (Class 1–5 and 6–8)</li>
+          <li>Minimum: <strong>21 years</strong> (Class 9–10 and 11–12)</li>
+          <li>Maximum: <strong>37 years</strong> (UR male)</li>
+          <li>Maximum: <strong>40 years</strong> (UR female, BC/EBC male and female)</li>
+          <li>Maximum: <strong>42 years</strong> (SC/ST male and female)</li>
+          <li>Age relaxation applies as per BPSC rules.</li>
+        </ul>
+      </section>
+
+      <section class="box">
+        <h3>Total posts</h3>
+        <p class="total">32,388 Posts</p>
+      </section>
+    </div>
+
+    <h3>Vacancy details: education qualification</h3>
+    <div class="tbl">
+      <table>
+        <tr><th>Post name</th><th>Eligibility criteria</th></tr>
+        <tr><td>School Teacher (Class 1 to 5)</td><td>Bachelor's degree with 50% marks and B.Ed, <strong>or</strong> bachelor's degree with a Diploma in Elementary Education, <strong>or</strong> 10+2 with 50% marks and a 2-year Diploma in Elementary Education, <strong>or</strong> 10+2 with 50% marks and a 4-year B.El.Ed, <strong>or</strong> master's degree with 55% marks and 3-year B.Ed-M.Ed. CTET Paper I or BTET Paper I must be qualified.</td></tr>
+        <tr><td>Middle School Teacher (Class 6 to 8)</td><td>Graduate with a 2-year D.El.Ed, <strong>or</strong> graduate or postgraduate with 50% marks and B.Ed, <strong>or</strong> graduate with 45% marks and B.Ed (NCTE norms), <strong>or</strong> graduate with 50% marks and BA.Ed or B.Sc.Ed, <strong>or</strong> postgraduate with 55% marks and 3-year B.Ed-M.Ed. See the official notification for more.</td></tr>
+        <tr><td>School Teacher (Class 6 to 10)</td><td>Graduate or postgraduate in the related subject with at least 50% marks and B.Ed, <strong>or</strong> 45% marks (2002 norms) and B.Ed, <strong>or</strong> 4-year BA.Ed / B.Sc.Ed. STET Paper I must be passed.</td></tr>
+        <tr><td>Secondary School Teacher, TGT (Class 9 to 10)</td><td>Graduate or postgraduate in the related subject with at least 50% marks and B.Ed, <strong>or</strong> 45% marks (2002 norms) and B.Ed, <strong>or</strong> 4-year BA.Ed / B.Sc.Ed. STET Paper I must be passed (subject wise).</td></tr>
+        <tr><td>Secondary School Teacher, TGT Special (Class 9 to 10)</td><td>Same qualification as TGT (Class 9 to 10), subject wise, with STET Paper I passed.</td></tr>
+        <tr><td>10+2 School Teacher, PGT (Class 11 to 12)</td><td>Postgraduate in the related subject with at least 50% marks and B.Ed, <strong>or</strong> 45% marks (2002 norms) and B.Ed, <strong>or</strong> 4-year BA.Ed / B.Sc.Ed, <strong>or</strong> master's degree with 55% marks and 3-year B.Ed-M.Ed. STET Paper II must be passed.</td></tr>
+      </table>
+    </div>
+
+    <h3>How to fill the BPSC School Teacher TRE 4.0 online form 2026</h3>
+    <p>Eligible candidates can apply online before <strong>26 October 2026</strong> using the apply link in the important links section below, or through the <a href="http://www.bpsc.bih.nic.in/">official BPSC website</a>. Complete the form and pay the fee before the deadline.</p>
+    <div class="note"><strong>Note:</strong> Read the official notification carefully before filling the form, especially the last date, age limit and education qualification.</div>
+
+    <h3>Mode of selection</h3>
+    <ul>
+      <li>Preliminary exam</li>
+      <li>Main exam</li>
+      <li>Merit list</li>
+      <li>Document verification</li>
+    </ul>
+
+    <h3>Important links</h3>
+    <div class="tbl">
+      <table class="links">
+        <tr><td>Apply online</td><td><a href="https://bpsconline.bihar.gov.in/candidate/login">Click here</a></td></tr>
+        <tr><td>Application start date notice</td><td><a href="https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-152026-TRE-4.0-Advertisement_BPSC-20260922-vn0ekm.pdf">Click here</a></td></tr>
+        <tr><td>Postponement notice</td><td><a href="https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-142026-TRE-4.0-Online-Application-Postponed_BPSC-20260831-yldqfj.pdf">Click here</a></td></tr>
+        <tr><td>Official notification</td><td><a href="#">Click here</a></td></tr>
+        <tr><td>Syllabus and exam pattern</td><td><a href="#">Click here</a></td></tr>
+        <tr><td>Join our WhatsApp channel</td><td><a href="https://www.whatsapp.com/channel/0029VbAXhqOElagvkmr9VH37">Follow now</a></td></tr>
+        <tr><td>Join our Telegram channel</td><td><a href="https://t.me/Bihardeooffice">Follow now</a></td></tr>
+        <tr><td>BPSC official website</td><td><a href="http://www.bpsc.bih.nic.in/">Click here</a></td></tr>
+      </table>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <p><strong>When did the online application start?</strong><br>It started on 25 September 2026.</p>
+      <p><strong>What is the last date to apply?</strong><br>The last date is 26 October 2026.</p>
+      <p><strong>What is the age limit?</strong><br>The minimum age is 18 (Class 1–8) or 21 (Class 9–12). The maximum is 37 to 42 years depending on category, as on 01 August 2026.</p>
+      <p><strong>What is the eligibility?</strong><br>It depends on the post and class level. See the qualification table above and the official notification.</p>
+      <p><strong>What is the official website?</strong><br><a href="http://www.bpsc.bih.nic.in/">www.bpsc.bih.nic.in</a></p>
+    </div>
+
+    <h2>Latest posts</h2>
+    <div class="related">
+      <ul>
+        <li><a href="#">Railway RRB Technician Exam City Details 2026</a></li>
+        <li><a href="#">Delhi High Court JJA Mains Admit Card 2026</a></li>
+        <li><a href="#">UPPSC ATP Mains Exam City Details 2026</a></li>
+        <li><a href="#">IBPS Clerk (CSA) 16th PET Admit Card 2026</a></li>
+        <li><a href="#">RSSB Exam Calendar 2026-27</a></li>
+      </ul>
+    </div>
+  </article>
+</main>
 </div>
 
-<div class="entry-panel">
-
-  <div class="entry-title">
-    <span>📝 शिक्षक / विद्यालय की जानकारी</span>
+<footer id="contact">
+  <div class="wrap">
+    <div class="fl">
+      <a href="#">Home</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a href="#">Disclaimer</a>
+    </div>
+    <p><strong>Disclaimer:</strong> Bihar DEO Office✅ is an independent information website and is not a government body. Exam forms, results, answer keys and dates are shared for quick information only and are not a legal document. Always confirm details on the official website before you apply.</p>
+    <p>Copyright © 2026 Bihar DEO Office✅</p>
   </div>
-
-  <div class="entry-grid">
-    <div>
-      <label>नाम (NAME)</label>
-      <input id="fName" oninput="syncHeader()">
-    </div>
-    <div>
-      <label>पदनाम (DESIGNATION)</label>
-      <input id="fDesignation" value="EXCLUSIVE TEACHER" oninput="syncHeader()">
-    </div>
-    <div>
-      <label>वर्ग (CLASS)</label>
-      <input id="fClass" oninput="syncHeader()">
-    </div>
-    <div>
-      <label>PRAN नंबर</label>
-      <input id="fPran" oninput="syncHeader()">
-    </div>
-    <div>
-      <label>विद्यालय का नाम (SCHOOL)</label>
-      <input id="fSchool" oninput="syncHeader()">
-    </div>
-    <div>
-      <label>प्रखंड (BLOCK)</label>
-      <input id="fBlock" value="JANDAHA" oninput="syncHeader()">
-    </div>
-    <div>
-      <label>जिला (DISTRICT)</label>
-      <input id="fDistrict" value="VAISHALI" oninput="syncHeader()">
-    </div>
-  </div>
-
-  <div class="collapse-head open" id="periodHead" onclick="toggleCollapse('periodBox','periodHead')">
-    <span>📅 अवधि (Period) — तारीख बदलने पर Table के Months अपने आप बन जायेंगे</span>
-    <span>▼</span>
-  </div>
-  <div class="collapse-content show" id="periodBox">
-    <div class="entry-grid">
-      <div>
-        <label>अवधि प्रारंभ (FROM DATE)</label>
-        <input type="date" id="fFromDate" oninput="onPeriodChange()">
-      </div>
-      <div>
-        <label>अवधि समाप्त (TO DATE)</label>
-        <input type="date" id="fToDate" oninput="onPeriodChange()">
-      </div>
-      <div>
-        <label>DA दर % (Rate of DA — सभी महीनों में लागू होगी)</label>
-        <input type="number" id="fDefaultRate" value="50" oninput="applyRateToAll()">
-      </div>
-    </div>
-  </div>
-
-  <div class="collapse-head" id="compHead" onclick="toggleCollapse('compBox','compHead')">
-    <span>⚙️ Salary Components (Pay/DA/HRA जैसे Columns Add/Remove करें)</span>
-    <span>▼</span>
-  </div>
-  <div class="collapse-content" id="compBox">
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
-      <button class="primary" onclick="addComponent()">＋ Component जोड़ें</button>
-      <button class="danger" onclick="openRemoveComponentModal()">− Component हटायें</button>
-    </div>
-    <div class="util-note">
-      <strong>💡 Note:</strong> हर Component (जैसे PAY, DA, HRA, Medical Allowance, Other Allowance) के लिए
-      अपने आप Admissible / Drawn / Difference के columns बन जाते हैं और Total, Gross Pay, Net Pay सब
-      Auto-Calculate होते हैं।
-    </div>
-  </div>
-
-  <div class="collapse-head" id="npsHead" onclick="toggleCollapse('npsBox','npsHead')">
-    <span>🧮 NPS Deduction Auto-Fill (वैकल्पिक)</span>
-    <span>▼</span>
-  </div>
-  <div class="collapse-content" id="npsBox">
-    <div class="entry-grid">
-      <div>
-        <label>NPS % (Gross Pay पर लागू)</label>
-        <input type="number" id="fNpsPercent" value="10">
-      </div>
-      <div style="display:flex;align-items:flex-end">
-        <button class="share-btn" style="width:100%" onclick="autoFillNPS()">🧮 सभी महीनों में NPS % लागू करें</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="collapse-head" id="sigHead" onclick="toggleCollapse('sigBox','sigHead')">
-    <span>✍️ Signature Blocks Customize (नाम/लेबल Add, Remove, Edit करें)</span>
-    <span>▼</span>
-  </div>
-  <div class="collapse-content" id="sigBox">
-    <div id="sigEditorList" style="margin-top:6px"></div>
-    <button class="primary" onclick="addSignature()">＋ Signature Block जोड़ें</button>
-  </div>
-
-  <div class="status" id="saveStatus">✓ Auto-save चालू है</div>
-</div>
-
-<div class="paper-container">
-  <div class="paper" id="paperEl">
-
-    <div class="form-title">PRAPTRA - 1</div>
-
-    <div class="header-lines">
-      <div class="header-row">
-        <div class="header-cell" style="flex:2">NAME:- <span id="hName"></span></div>
-        <div class="header-cell" style="flex:1.4">DESIGNATION / CLASS:- <span id="hDesignation"></span></div>
-      </div>
-      <div class="header-row">
-        <div class="header-cell" style="flex:2">NAME OF SCHOOL:- <span id="hSchool"></span> &nbsp; BLOCK - <span id="hBlock"></span>, DIST.:- <span id="hDistrict"></span></div>
-        <div class="header-cell" style="flex:1.4">PRAN NO -<span id="hPran"></span></div>
-      </div>
-    </div>
-
-    <div class="section-title">
-      SALARY DIFFERENCE STATEMENT DATED - <span id="hFrom"></span> TO DATED - <span id="hTo"></span>
-    </div>
-
-    <div style="overflow-x:auto">
-    <table id="mainTable">
-      <thead id="tableHead"></thead>
-      <tbody id="tableBody"></tbody>
-      <tfoot id="tableFoot"></tfoot>
-    </table>
-    </div>
-
-    <div class="signatures" id="signaturesRow"></div>
-
-  </div>
-</div>
-
-</div>
-
-<!-- ================= REMOVE COMPONENT MODAL ================= -->
-<div class="dialog-bg" id="compModal">
-  <div class="dialog-box">
-    <h4>कौन सा Component हटाना चाहते हैं?</h4>
-    <select id="delCompSelect"></select>
-    <div style="display:flex;gap:6px;justify-content:flex-end">
-      <button class="gray" onclick="closeRemoveComponentModal()">रद्द करें</button>
-      <button class="danger" onclick="confirmRemoveComponent()">हटाएं</button>
-    </div>
-  </div>
-</div>
-
-<script>
-
-const DATA_KEY = "praptra1_salary_diff_v2";
-const MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-
-let compCounter = 3;
-let components = [
-  {id:"c1", name:"PAY"},
-  {id:"c2", name:"DA"},
-  {id:"c3", name:"HRA"}
-];
-
-let details = {
-  name:"", designation:"EXCLUSIVE TEACHER", className:"", pran:"",
-  school:"", block:"JANDAHA", district:"VAISHALI"
-};
-
-let periodFromDate = "2025-01-01";
-let periodToDate = "2025-10-31";
-let defaultRate = "50";
-
-let rows = []; // {month:"YYYY-MM", rate, admissible:{id:val}, drawn:{id:val}, nps}
-
-let signatures = [
-  "विशिष्ट शिक्षक का हस्ताक्षर",
-  "प्रधानाध्यापक का हस्ताक्षर",
-  "प्रखंड शिक्षा पदाधिकारी का हस्ताक्षर"
-];
-
-function n(v){ const x = Number(v); return isNaN(x) ? 0 : x; }
-
-function esc(s){
-  return String(s ?? "")
-    .replace(/&/g,"&amp;").replace(/"/g,"&quot;")
-    .replace(/</g,"&lt;").replace(/>/g,"&gt;");
-}
-
-function fmtDateDisplay(iso){
-  if(!iso) return "……………";
-  const [y,m,d] = iso.split("-");
-  if(!y||!m||!d) return iso;
-  return `${d}/${m}/${y}`;
-}
-
-function monthKeyFromDate(iso){
-  const [y,m] = iso.split("-");
-  return `${y}-${m}`;
-}
-
-function monthLabel(key){
-  const [y,m] = key.split("-");
-  return `${MONTH_NAMES[Number(m)-1]}-${y}`;
-}
-
-function generateMonthKeys(fromIso, toIso){
-  const fromKey = monthKeyFromDate(fromIso);
-  const toKey = monthKeyFromDate(toIso);
-  let [fy,fm] = fromKey.split("-").map(Number);
-  let [ty,tm] = toKey.split("-").map(Number);
-
-  const keys = [];
-  let y = fy, m = fm;
-  let guard = 0;
-
-  // if from is after to, swap so range always renders sensibly
-  if(y > ty || (y === ty && m > tm)){
-    [y,m,ty,tm] = [ty,tm,y,m];
-  }
-
-  while((y < ty || (y === ty && m <= tm)) && guard < 240){
-    keys.push(`${y}-${String(m).padStart(2,"0")}`);
-    m++;
-    if(m > 12){ m = 1; y++; }
-    guard++;
-  }
-  return keys;
-}
-
-function blankValues(){
-  const obj = {};
-  components.forEach(c => obj[c.id] = "");
-  return obj;
-}
-
-function createBlankRow(key){
-  return { month:key, rate:String(defaultRate), admissible:blankValues(), drawn:blankValues(), nps:"" };
-}
-
-function regenerateRows(){
-  const keys = generateMonthKeys(periodFromDate, periodToDate);
-  const oldMap = {};
-  rows.forEach(r => oldMap[r.month] = r);
-
-  rows = keys.map(k => {
-    if(oldMap[k]){
-      // ensure all current components exist on this row
-      components.forEach(c=>{
-        if(!(c.id in oldMap[k].admissible)) oldMap[k].admissible[c.id] = "";
-        if(!(c.id in oldMap[k].drawn)) oldMap[k].drawn[c.id] = "";
-      });
-      return oldMap[k];
-    }
-    return createBlankRow(k);
-  });
-}
-
-function onPeriodChange(){
-  periodFromDate = document.getElementById("fFromDate").value || periodFromDate;
-  periodToDate = document.getElementById("fToDate").value || periodToDate;
-  regenerateRows();
-  renderHeader();
-  renderTable();
-  autoSave();
-}
-
-function applyRateToAll(){
-  defaultRate = document.getElementById("fDefaultRate").value || "50";
-  rows.forEach(r => r.rate = String(defaultRate));
-  renderTable();
-  autoSave();
-}
-
-/* ================= COMPONENT MANAGEMENT ================= */
-
-function addComponent(){
-  const name = prompt("नए Component / Head का नाम दर्ज करें (जैसे: Medical Allowance):", `Component ${components.length+1}`);
-  if(!name || !name.trim()) return;
-
-  compCounter++;
-  const id = "c" + compCounter;
-  components.push({id, name:name.trim()});
-
-  rows.forEach(r => {
-    r.admissible[id] = "";
-    r.drawn[id] = "";
-  });
-
-  renderTable();
-  autoSave();
-}
-
-function removeComponentById(id){
-  if(components.length <= 1){
-    alert("कम से कम एक Component रखना आवश्यक है।");
-    return;
-  }
-  components = components.filter(c => c.id !== id);
-  rows.forEach(r => {
-    delete r.admissible[id];
-    delete r.drawn[id];
-  });
-  renderTable();
-  autoSave();
-}
-
-function openRemoveComponentModal(){
-  if(components.length <= 1){
-    alert("कम से कम एक Component रखना आवश्यक है।");
-    return;
-  }
-  const select = document.getElementById("delCompSelect");
-  select.innerHTML = components.map(c => `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join("");
-  document.getElementById("compModal").style.display = "flex";
-}
-
-function closeRemoveComponentModal(){
-  document.getElementById("compModal").style.display = "none";
-}
-
-function confirmRemoveComponent(){
-  const id = document.getElementById("delCompSelect").value;
-  closeRemoveComponentModal();
-  removeComponentById(id);
-}
-
-/* ================= SIGNATURE BLOCKS ================= */
-
-function renderSignatures(){
-  renderSignatureEditor();
-  renderSignaturePreview();
-}
-
-function renderSignatureEditor(){
-  const editor = document.getElementById("sigEditorList");
-  editor.innerHTML = signatures.map((label, i) => `
-    <div class="sig-editor-item">
-      <input value="${esc(label)}" oninput="updateSignatureLabel(${i}, this.value)" placeholder="Signature Label">
-      <button class="danger" onclick="removeSignature(${i})" ${signatures.length<=1 ? "disabled" : ""}>✕</button>
-    </div>
-  `).join("");
-}
-
-function renderSignaturePreview(){
-  const row = document.getElementById("signaturesRow");
-  row.style.gridTemplateColumns = `repeat(${signatures.length}, 1fr)`;
-  row.innerHTML = signatures.map(label => `<div class="sig">${esc(label)}</div>`).join("");
-}
-
-function updateSignatureLabel(index, value){
-  signatures[index] = value;
-  renderSignaturePreview();
-  autoSave();
-}
-
-function addSignature(){
-  signatures.push(`Signature ${signatures.length+1}`);
-  renderSignatures();
-  autoSave();
-}
-
-function removeSignature(index){
-  if(signatures.length <= 1){
-    alert("कम से कम एक Signature Block रखना आवश्यक है।");
-    return;
-  }
-  signatures.splice(index,1);
-  renderSignatures();
-  autoSave();
-}
-
-/* ================= ROW CALCULATIONS ================= */
-
-function rowCalc(r){
-  let aTotal = 0, dTotal = 0, fTotal = 0;
-  const diffs = {};
-
-  components.forEach(c => {
-    const a = n(r.admissible[c.id]);
-    const d = n(r.drawn[c.id]);
-    const f = a - d;
-    diffs[c.id] = f;
-    aTotal += a; dTotal += d; fTotal += f;
-  });
-
-  const gross = fTotal;
-  const nps = n(r.nps);
-  const net = gross - nps;
-
-  return { aTotal, dTotal, fTotal, diffs, gross, nps, net };
-}
-
-/* ================= RENDER ================= */
-
-function buildHeaderHTML(){
-  const compCount = components.length;
-
-  let row1 = `
-    <tr>
-      <th rowspan="2">MONTH</th>
-      <th rowspan="2">DA %</th>
-      <th colspan="${compCount+1}">ADMISSIBLE AMOUNT</th>
-      <th colspan="${compCount+1}">DRAWN AMOUNT</th>
-      <th colspan="${compCount+1}">DIFFERENCE AMOUNT</th>
-      <th rowspan="2">Gross Pay</th>
-      <th rowspan="2">Deduct. N.P.S</th>
-      <th rowspan="2">Net Pay</th>
-    </tr>
-  `;
-
-  function compHeaderCells(){
-    return components.map(c => `
-      <th>
-        <span class="comp-name">${esc(c.name)}</span>
-        <span class="comp-del" title="इस Component को हटायें" onclick="removeComponentById('${c.id}')">✕</span>
-      </th>
-    `).join("") + `<th>TOTAL</th>`;
-  }
-
-  let row2 = `
-    <tr>
-      ${compHeaderCells()}
-      ${compHeaderCells()}
-      ${compHeaderCells()}
-    </tr>
-  `;
-
-  return row1 + row2;
-}
-
-function renderTable(){
-  document.getElementById("tableHead").innerHTML = buildHeaderHTML();
-
-  const body = document.getElementById("tableBody");
-  body.innerHTML = "";
-
-  rows.forEach((r,i)=>{
-    const calc = rowCalc(r);
-
-    let admissibleCells = components.map(c => `
-      <td><input value="${esc(r.admissible[c.id])}" oninput="cellChange(${i},'admissible','${c.id}',this.value)"></td>
-    `).join("") + `<td class="readonly">${calc.aTotal || ""}</td>`;
-
-    let drawnCells = components.map(c => `
-      <td><input value="${esc(r.drawn[c.id])}" oninput="cellChange(${i},'drawn','${c.id}',this.value)"></td>
-    `).join("") + `<td class="readonly">${calc.dTotal || ""}</td>`;
-
-    let diffCells = components.map(c => `
-      <td class="readonly">${calc.diffs[c.id] || ""}</td>
-    `).join("") + `<td class="readonly">${calc.fTotal || ""}</td>`;
-
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td class="month-cell">${esc(monthLabel(r.month))}</td>
-      <td><input value="${esc(r.rate)}" style="max-width:50px" oninput="rateChange(${i},this.value)"></td>
-      ${admissibleCells}
-      ${drawnCells}
-      ${diffCells}
-      <td class="readonly">${calc.gross || ""}</td>
-      <td><input value="${esc(r.nps)}" oninput="npsChange(${i},this.value)"></td>
-      <td class="readonly">${calc.net || ""}</td>
-    `;
-    body.appendChild(tr);
-  });
-
-  renderTotals();
-}
-
-function renderTotals(){
-  let t = { aTotal:0, dTotal:0, fTotal:0, gross:0, nps:0, net:0 };
-  const compA = {}, compD = {}, compF = {};
-  components.forEach(c => { compA[c.id]=0; compD[c.id]=0; compF[c.id]=0; });
-
-  rows.forEach(r => {
-    const calc = rowCalc(r);
-    t.aTotal += calc.aTotal; t.dTotal += calc.dTotal; t.fTotal += calc.fTotal;
-    t.gross += calc.gross; t.nps += calc.nps; t.net += calc.net;
-    components.forEach(c => {
-      compA[c.id] += n(r.admissible[c.id]);
-      compD[c.id] += n(r.drawn[c.id]);
-      compF[c.id] += calc.diffs[c.id];
-    });
-  });
-
-  let admissibleCells = components.map(c => `<td class="readonly">${compA[c.id] || ""}</td>`).join("")
-    + `<td class="readonly">${t.aTotal || ""}</td>`;
-  let drawnCells = components.map(c => `<td class="readonly">${compD[c.id] || ""}</td>`).join("")
-    + `<td class="readonly">${t.dTotal || ""}</td>`;
-  let diffCells = components.map(c => `<td class="readonly">${compF[c.id] || ""}</td>`).join("")
-    + `<td class="readonly">${t.fTotal || ""}</td>`;
-
-  document.getElementById("tableFoot").innerHTML = `
-    <tr>
-      <td colspan="2">TOTAL</td>
-      ${admissibleCells}
-      ${drawnCells}
-      ${diffCells}
-      <td class="readonly">${t.gross || ""}</td>
-      <td class="readonly">${t.nps || ""}</td>
-      <td class="readonly">${t.net || ""}</td>
-    </tr>
-  `;
-}
-
-function cellChange(index, section, compId, value){
-  rows[index][section][compId] = value;
-  renderTable();
-  autoSave();
-}
-
-function rateChange(index, value){
-  rows[index].rate = value;
-  renderTable();
-  autoSave();
-}
-
-function npsChange(index, value){
-  rows[index].nps = value;
-  renderTable();
-  autoSave();
-}
-
-function autoFillNPS(){
-  const percent = n(document.getElementById("fNpsPercent").value);
-  rows.forEach(r => {
-    const calc = rowCalc(r);
-    r.nps = String(Math.round(calc.gross * percent / 100));
-  });
-  renderTable();
-  autoSave();
-}
-
-/* ================= HEADER / DETAILS ================= */
-
-function syncHeader(){
-  details.name = document.getElementById("fName").value;
-  details.designation = document.getElementById("fDesignation").value;
-  details.className = document.getElementById("fClass").value;
-  details.pran = document.getElementById("fPran").value;
-  details.school = document.getElementById("fSchool").value;
-  details.block = document.getElementById("fBlock").value;
-  details.district = document.getElementById("fDistrict").value;
-  renderHeader();
-  autoSave();
-}
-
-function renderHeader(){
-  document.getElementById("hName").textContent = details.name || "……………………………………";
-  const desigClass = [details.designation, details.className].filter(Boolean).join(" — ");
-  document.getElementById("hDesignation").textContent = desigClass || "……………………";
-  document.getElementById("hSchool").textContent = details.school || "……………………………";
-  document.getElementById("hBlock").textContent = details.block || "……………";
-  document.getElementById("hDistrict").textContent = details.district || "……………";
-  document.getElementById("hPran").textContent = details.pran || "……………………………";
-  document.getElementById("hFrom").textContent = fmtDateDisplay(periodFromDate);
-  document.getElementById("hTo").textContent = fmtDateDisplay(periodToDate);
-}
-
-function toggleCollapse(boxId, headId){
-  document.getElementById(boxId).classList.toggle("show");
-  document.getElementById(headId).classList.toggle("open");
-}
-
-/* ================= SAVE / LOAD ================= */
-
-function autoSave(){
-  try{
-    localStorage.setItem(DATA_KEY, JSON.stringify({
-      rows, details, components, compCounter, periodFromDate, periodToDate, defaultRate, signatures
-    }));
-    const status = document.getElementById("saveStatus");
-    if(status) status.textContent = "✓ Auto-saved • " + new Date().toLocaleTimeString("hi-IN");
-  }catch(e){ console.error(e); }
-}
-
-function saveData(){
-  autoSave();
-  alert("✓ डेटा सुरक्षित कर दिया गया है।");
-}
-
-function loadData(){
-  const raw = localStorage.getItem(DATA_KEY);
-  if(raw){
-    try{
-      const data = JSON.parse(raw);
-      if(Array.isArray(data.components) && data.components.length) components = data.components;
-      if(typeof data.compCounter === "number") compCounter = data.compCounter;
-      if(data.details) details = Object.assign(details, data.details);
-      if(data.periodFromDate) periodFromDate = data.periodFromDate;
-      if(data.periodToDate) periodToDate = data.periodToDate;
-      if(data.defaultRate) defaultRate = data.defaultRate;
-      if(Array.isArray(data.rows) && data.rows.length) rows = data.rows;
-      if(Array.isArray(data.signatures) && data.signatures.length) signatures = data.signatures;
-    }catch(e){ console.error(e); }
-  }
-
-  if(!rows.length){
-    regenerateRows();
-  }
-
-  document.getElementById("fName").value = details.name;
-  document.getElementById("fDesignation").value = details.designation;
-  document.getElementById("fClass").value = details.className;
-  document.getElementById("fPran").value = details.pran;
-  document.getElementById("fSchool").value = details.school;
-  document.getElementById("fBlock").value = details.block;
-  document.getElementById("fDistrict").value = details.district;
-  document.getElementById("fFromDate").value = periodFromDate;
-  document.getElementById("fToDate").value = periodToDate;
-  document.getElementById("fDefaultRate").value = defaultRate;
-
-  renderHeader();
-  renderTable();
-  renderSignatures();
-}
-
-function clearData(){
-  if(confirm("क्या आप पूरा डेटा रीसेट करना चाहते हैं?")){
-    localStorage.removeItem(DATA_KEY);
-    location.reload();
-  }
-}
-
-/* ================= EXCEL EXPORT ================= */
-
-function exportToExcel(){
-  const headers = ["MONTH","DA %"];
-  components.forEach(c => headers.push(`Admissible ${c.name}`));
-  headers.push("Admissible TOTAL");
-  components.forEach(c => headers.push(`Drawn ${c.name}`));
-  headers.push("Drawn TOTAL");
-  components.forEach(c => headers.push(`Diff ${c.name}`));
-  headers.push("Diff TOTAL","Gross Pay","Deduct. NPS","Net Pay");
-
-  const dataRows = rows.map(r => {
-    const calc = rowCalc(r);
-    const row = { "MONTH": monthLabel(r.month), "DA %": r.rate };
-    components.forEach(c => row[`Admissible ${c.name}`] = n(r.admissible[c.id]));
-    row["Admissible TOTAL"] = calc.aTotal;
-    components.forEach(c => row[`Drawn ${c.name}`] = n(r.drawn[c.id]));
-    row["Drawn TOTAL"] = calc.dTotal;
-    components.forEach(c => row[`Diff ${c.name}`] = calc.diffs[c.id]);
-    row["Diff TOTAL"] = calc.fTotal;
-    row["Gross Pay"] = calc.gross;
-    row["Deduct. NPS"] = calc.nps;
-    row["Net Pay"] = calc.net;
-    return row;
-  });
-
-  // totals row
-  let t = { aTotal:0, dTotal:0, fTotal:0, gross:0, nps:0, net:0 };
-  const compA = {}, compD = {}, compF = {};
-  components.forEach(c => { compA[c.id]=0; compD[c.id]=0; compF[c.id]=0; });
-  rows.forEach(r => {
-    const calc = rowCalc(r);
-    t.aTotal += calc.aTotal; t.dTotal += calc.dTotal; t.fTotal += calc.fTotal;
-    t.gross += calc.gross; t.nps += calc.nps; t.net += calc.net;
-    components.forEach(c => {
-      compA[c.id] += n(r.admissible[c.id]);
-      compD[c.id] += n(r.drawn[c.id]);
-      compF[c.id] += calc.diffs[c.id];
-    });
-  });
-
-  const totalRow = { "MONTH": "TOTAL", "DA %": "" };
-  components.forEach(c => totalRow[`Admissible ${c.name}`] = compA[c.id]);
-  totalRow["Admissible TOTAL"] = t.aTotal;
-  components.forEach(c => totalRow[`Drawn ${c.name}`] = compD[c.id]);
-  totalRow["Drawn TOTAL"] = t.dTotal;
-  components.forEach(c => totalRow[`Diff ${c.name}`] = compF[c.id]);
-  totalRow["Diff TOTAL"] = t.fTotal;
-  totalRow["Gross Pay"] = t.gross;
-  totalRow["Deduct. NPS"] = t.nps;
-  totalRow["Net Pay"] = t.net;
-  dataRows.push(totalRow);
-
-  const infoRows = [
-    {"MONTH":"NAME","DA %":details.name},
-    {"MONTH":"DESIGNATION","DA %":details.designation},
-    {"MONTH":"CLASS","DA %":details.className},
-    {"MONTH":"SCHOOL","DA %":details.school},
-    {"MONTH":"BLOCK","DA %":details.block},
-    {"MONTH":"DISTRICT","DA %":details.district},
-    {"MONTH":"PRAN NO","DA %":details.pran},
-    {"MONTH":"PERIOD","DA %":`${fmtDateDisplay(periodFromDate)} TO ${fmtDateDisplay(periodToDate)}`},
-    {}
-  ];
-
-  const worksheet = XLSX.utils.json_to_sheet([...infoRows, ...dataRows], {header:headers});
-  worksheet["!cols"] = headers.map(h => ({wch: Math.max(12, h.length+4)}));
-
-  const workbook = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(workbook, worksheet, "PRAPTRA-1");
-
-  const safeName = String(details.name || "Teacher").replace(/[\\/:*?"<>|]/g,"_");
-  XLSX.writeFile(workbook, `PRAPTRA-1_Salary_Difference_${safeName}.xlsx`);
-}
-
-/* ================= PDF DOWNLOAD (auto-fit, no cropping) ================= */
-
-async function downloadPDF(){
-  const element = document.getElementById("paperEl");
-  const safeName = String(details.name || "Teacher").replace(/[\\/:*?"<>|]/g,"_");
-  const filename = `PRAPTRA-1_Salary_Difference_${safeName}.pdf`;
-
-  const btns = document.querySelectorAll(".toolbar button");
-  btns.forEach(b => b.disabled = true);
-
-  try{
-    const scale = 2;
-    const canvas = await html2canvas(element, {
-      scale,
-      useCORS:true,
-      backgroundColor:"#ffffff",
-      windowWidth: element.scrollWidth,
-      windowHeight: element.scrollHeight,
-      scrollX:0,
-      scrollY:0
-    });
-
-    const imgData = canvas.toDataURL("image/jpeg", 0.98);
-
-    const pxToMm = px => px * 25.4 / 96;
-    const pdfWidth = pxToMm(canvas.width / scale);
-    const pdfHeight = pxToMm(canvas.height / scale);
-
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF({
-      orientation: pdfWidth >= pdfHeight ? "landscape" : "portrait",
-      unit:"mm",
-      format:[pdfWidth, pdfHeight]
-    });
-
-    pdf.addImage(imgData, "JPEG", 0, 0, pdfWidth, pdfHeight);
-    pdf.save(filename);
-
-  }catch(error){
-    console.error(error);
-    alert("PDF बनाने में समस्या आई। कृपया पुनः प्रयास करें।");
-  }finally{
-    btns.forEach(b => b.disabled = false);
-  }
-}
-
-/* ================= START ================= */
-
-loadData();
-
-</script>
+</footer>
 
 </body>
 </html>
